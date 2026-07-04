@@ -280,7 +280,7 @@ Book Free Consultation
 
 href="services.html"
 
-class="btn btn-outline-primary">
+class="btn btn-outline-primary ">
 
 Explore Services
 
@@ -288,91 +288,67 @@ Explore Services
 
 </div>
 
-<div class="row mt-5">
+<div class="row mt-5" style="margin-bottom: 5px;">
 
-<div class="col-4">
+  <div class="col-4" style="text-align: center;">
+    <h3 class="counter" data-target="2500" style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+      0
+    </h3>
+    <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0;">
+      Students
+    </p>
+  </div>
 
-<h3 class="counter"
+  <div class="col-4" style="text-align: center;">
+    <h3 class="counter" data-target="99%" style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+      0
+    </h3>
+     
+    <script>
+      (function() {
+        const counter = document.querySelector('.counter[data-target="99%"]');
+        if (!counter) return;
 
-data-target="2500">
+        const targetAttr = counter.getAttribute('data-target');
+        const target = parseInt(targetAttr.replace(/[^0-9]/g, ''), 10); 
+        let current = 0;
+        
+        const duration = 1500; 
+        const interval = 16; 
+        const steps = duration / interval;
+        const increment = target / steps;
 
-0
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            counter.innerText = target + '%';
+            clearInterval(timer);
+          } else {
+            counter.innerText = Math.floor(current) + '%';
+          }
+        }, interval);
+      })();
+    </script>
 
-</h3>
+    <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0; text-transform: uppercase;">
+      VISA SUCCESS RATE
+    </p>
+  </div>
 
-<p>
-
-Students
-
-</p>
-
-</div>
-
-<div class="col-4">
-
-<h3 class="counter" data-target="99%">0</h3>
-
-<script>
-  (function() {
-    const counter = document.querySelector('.counter[data-target="99%"]');
-    if (!counter) return;
-
-    const targetAttr = counter.getAttribute('data-target');
-    // Extracts just the number 99
-    const target = parseInt(targetAttr.replace(/[^0-9]/g, ''), 10); 
-    let current = 0;
-    
-    // Total animation duration in ms (1.5 seconds)
-    const duration = 1500; 
-    // Frame rate interval (approx 60 fps)
-    const interval = 16; 
-    const steps = duration / interval;
-    const increment = target / steps;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        counter.innerText = target + '%';
-        clearInterval(timer);
-      } else {
-        counter.innerText = Math.floor(current) + '%';
-      }
-    }, interval);
-  })();
-</script>
-
-<p>
-
-VISA SUCCESS RATE
-
-</p>
-
-</div>
-
-<div class="col-4">
-
-<h3 class="counter"
-
-data-target="18">
-
-0
-
-</h3>
-
-<p>
-
-Countries
-
-</p>
-
-</div>
+  <div class="col-4" style="text-align: center;">
+    <h3 class="counter" data-target="18" style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+      0
+    </h3>
+    <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0;">
+      Countries
+    </p>
+  </div>
 
 </div>
 
 </div>
 
 <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-left">
-  <!-- Container with inline styling for the size, drop-shadow, and float animation -->
   <div class="p-4 bg-white rounded-4" 
        style="max-width: 280px; 
               box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); 
@@ -386,7 +362,6 @@ Countries
     >
   </div>
 
-  <!-- Small inline style tag block just to declare the keyframe animation behavior -->
   <style>
     @keyframes float-logo {
       0% { transform: translateY(0px); }
@@ -402,9 +377,7 @@ Countries
 
 </header>
 
-<!-- ================= Statistics ================= -->
-
-<section class="stats">
+<section class="stats" style="margin-top: 5px;">
 
 <div class="container">
 
@@ -523,12 +496,11 @@ WHY CHOOSE MAR CONSULTANCY
 
                     </div>
 
-                    <h4>Expert Counselling</h4>
+                    <h4>Round-the-Clock Support</h4>
 
                     <p>
 
-                        Personalized counselling based on your academic
-                        profile, career goals and budget.
+                       Real help from real people, absolutely anytime you need it.
 
                     </p>
 
@@ -1083,7 +1055,7 @@ Students Who Trusted MAR Consultancy
 
 <div class="testimonial">
 
-<img src="assets/images/testimonials/student1.jpg">
+<img src="assets/images/gallery/vecteezy_attractive-happy-north-indian-young-man-in-traditional-dress_49329467.png">
 
 <h5 class="mt-3">
 
@@ -1112,7 +1084,7 @@ to visa approval. The process was smooth and hassle-free.
 
 <div class="testimonial">
 
-<img src="assets/images/testimonials/student2.jpg">
+<img src="assets/images/gallery/portrait-smiling-indian-person-posing-front-camera.jpg">
 
 <h5 class="mt-3">
 
@@ -1141,7 +1113,7 @@ Highly recommended.
 
 <div class="testimonial">
 
-<img src="assets/images/testimonials/student3.jpg">
+<img src="assets/images/gallery/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg">
 
 <h5 class="mt-3">
 
@@ -1384,9 +1356,7 @@ Visit MAR Consultancy
                 Find Our Location
             </h4>
             <div style="width: 100%; height: 400px; border-radius: 6px; overflow: hidden; border: 1px solid #ccc;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15234.445224352345!2d78.572479305474!3d17.3342933448444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99195ec959db%3A0x2a414fd6a47ff2fa!2sSMFG%20India%20Credit%20Co.%20Ltd.%20-%20Vanasthalipuram%20(Urban%20Branch)!5e0!3m2!1sen!2sin!4v1783071043626!5m2!1sen!2sin"
-                    loading="lazy"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3805.1928181992816!2d78.39523!3d17.4983067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI5JzUzLjkiTiA3OMKwMjMnNDIuOCJF!5e0!3m2!1sen!2sin!4v1783143400368!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     allowfullscreen
                     referrerpolicy="strict-origin-when-cross-origin"
                     style="width: 100%; height: 100%; border: 0;">
@@ -1401,11 +1371,7 @@ Visit MAR Consultancy
                 3D View
             </h4>
             <div style="width: 100%; height: 400px; border-radius: 6px; overflow: hidden; border: 1px solid #ccc;">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!4v1783070986736!6m8!1m7!1sQMK2_5g5Eczudvggxxpjug!2m2!1d17.33388603691268!2d78.56952784066539!3f72.98885641536268!4f1.3514394974328212!5f0.7820865974627469"
-                    loading="lazy"
-                    allowfullscreen
-                    referrerpolicy="strict-origin-when-cross-origin"
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1783143728973!6m8!1m7!1smW1Gd5ieDNwZQa5aILUVqg!2m2!1d17.49834233538263!2d78.39524348484566!3f215.94667!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
                     style="width: 100%; height: 100%; border: 0;">
                 </iframe>
             </div>
@@ -1538,9 +1504,7 @@ Contact Information
 
 <i class="bi bi-geo-alt-fill text-warning"></i>
 
-Plot No. C 174, S No. 201, MIG, Phase 4, Phase II,
-Balanagar, Vanasthalipuram, Hyderabad,
-Ranga Reddy District, T.S.500070.
+Addagutta Society, Western Hills, Jal Vayu Vihar, Near Deepa Bakery, 4th Road, Addagutta Society, Hyderabad-500085, Telangana
 
 </p>
 
