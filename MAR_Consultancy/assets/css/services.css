@@ -11,16 +11,9 @@
 
     position:relative;
 
-    padding:130px 0 90px;
+    padding:60px 0;
 
-    background:
-    linear-gradient(rgba(9,32,74,.88),
-    rgba(9,32,74,.88)),
-    url("../images/services/banner.jpg");
-
-    background-size:cover;
-
-    background-position:center;
+    background:linear-gradient(135deg, #0B2447 0%, #19376D 100%);
 
     color:#fff;
 
@@ -50,7 +43,7 @@
 
 .page-banner h1{
 
-    font-size:3.4rem;
+    font-size:2.6rem;
 
     font-weight:800;
 
@@ -781,7 +774,7 @@
 
 .whatsapp-btn{
 
-    bottom:95px;
+    bottom:25px;
 
     background:#25D366;
 
@@ -789,7 +782,7 @@
 
 .call-btn{
 
-    bottom:25px;
+    bottom:95px;
 
     background:#0d6efd;
 
@@ -803,55 +796,7 @@
 
 }
 
-.back-to-top{
 
-    position:fixed;
-
-    left:25px;
-
-    bottom:25px;
-
-    width:55px;
-
-    height:55px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    border-radius:50%;
-
-    background:#ffc107;
-
-    color:#07162f;
-
-    cursor:pointer;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.35s;
-
-    z-index:999;
-
-}
-
-.back-to-top.active{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-.back-to-top:hover{
-
-    transform:translateY(-5px);
-
-}
 /* ==========================================================
    ANIMATION UTILITIES
 ========================================================== */
@@ -1123,7 +1068,7 @@ font-size:2.4rem;
 
 .page-banner{
 
-padding:110px 0 70px;
+padding:50px 0;
 
 text-align:center;
 
@@ -1217,7 +1162,7 @@ font-size:2rem;
 
 .page-banner{
 
-padding:90px 0 60px;
+padding:45px 0;
 
 }
 
@@ -1315,27 +1260,17 @@ right:15px;
 
 .whatsapp-btn{
 
-bottom:85px;
+bottom:15px;
 
 }
 
 .call-btn{
 
-bottom:15px;
+bottom:85px;
 
 }
 
-.back-to-top{
 
-left:15px;
-
-bottom:15px;
-
-width:50px;
-
-height:50px;
-
-}
 
 }
 
@@ -1377,6 +1312,113 @@ background:#ffffff;
 
 }
 
+}
+
+/* ==========================================================
+   PROFESSIONAL SERVICES ENHANCEMENTS
+========================================================== */
+
+/* Tighter section padding - override Bootstrap py-5 */
+section.py-5{
+    padding-top:70px !important;
+    padding-bottom:70px !important;
+}
+
+/* Alternate section backgrounds */
+.bg-section{
+    background: linear-gradient(135deg, #f8faff 0%, #eef4ff 100%);
+}
+
+/* Intro section upgrade */
+.intro-content h2{
+    font-size:2.4rem;
+    font-weight:800;
+    color:#0B2447;
+    line-height:1.2;
+}
+
+.intro-content h3{
+    font-weight:800;
+    color:#0d6efd;
+    font-size:2rem;
+}
+
+/* Service card professional polish */
+.service-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.service-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:24px;
+    border:2px solid transparent;
+    transition:.35s;
+}
+
+.service-card:hover::after{
+    border-color:#0d6efd;
+}
+
+.service-card:hover{
+    background:linear-gradient(145deg,#fff 60%,#f0f6ff);
+}
+
+/* Section headings */
+.section-title span{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#0d6efd;
+    margin-bottom:14px;
+}
+
+.section-title h2{
+    font-size:2.3rem;
+    font-weight:800;
+    color:#0B2447;
+    line-height:1.2;
+}
+
+/* Badge styling */
+.badge-primary{
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+/* Process/step cards */
+.step-number, .number{
+    font-size:3rem;
+    font-weight:900;
+    color:#e8f0fd;
+    line-height:1;
+}
+
+/* Modern card tweaks */
+.card-modern{
+    border-left: 4px solid #0d6efd;
+}
+
+.card-modern .card-body{
+    padding:28px;
+}
+
+.card-modern i{
+    font-size:46px;
+    color:#0d6efd;
+    margin-bottom:18px;
+}
+
+/* Row stats inside intro */
+.intro-content .row h3{
+    font-size:2.5rem;
+    font-weight:900;
+    color:#0d6efd;
 }
 
 /* ==========================================================

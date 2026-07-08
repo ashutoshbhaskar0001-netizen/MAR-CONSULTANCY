@@ -149,8 +149,16 @@ p{
    CONTAINER
    ========================================================== */
 
-.container{
-    max-width:1320px;
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl{
+    max-width:1520px;
+    padding-left:clamp(20px, 4vw, 60px) !important;
+    padding-right:clamp(20px, 4vw, 60px) !important;
 }
 
 /* ==========================================================
@@ -399,7 +407,9 @@ select:focus{
 
     position:fixed;
 
-    right:25px;
+    left:25px;
+
+    right:auto;
 
     bottom:25px;
 
@@ -413,11 +423,13 @@ select:focus{
 
     justify-content:center;
 
-    background:var(--gradient-primary);
+    background:#222;
 
     color:#fff;
 
     border-radius:50%;
+
+    border:none;
 
     cursor:pointer;
 
@@ -425,7 +437,7 @@ select:focus{
 
     visibility:hidden;
 
-    transition:var(--transition);
+    transition:.35s;
 
     z-index:999;
 
@@ -436,6 +448,16 @@ select:focus{
     opacity:1;
 
     visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    transform:translateY(-5px);
 
 }
 

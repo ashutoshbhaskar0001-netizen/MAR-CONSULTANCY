@@ -59,13 +59,13 @@ function initStickyNavbar() {
 
         if (window.scrollY > 80) {
 
-            navbar.classList.add("sticky-navbar");
+            navbar.classList.add("sticky");
 
         }
 
         else {
 
-            navbar.classList.remove("sticky-navbar");
+            navbar.classList.remove("sticky");
 
         }
 

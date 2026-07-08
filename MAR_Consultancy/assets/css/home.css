@@ -11,7 +11,9 @@
 
     position:relative;
 
-    min-height:100vh;
+    min-height:auto;
+
+    padding:120px 0 90px;
 
     display:flex;
 
@@ -788,57 +790,7 @@
    FLOATING BUTTONS
 ========================================================== */
 
-.back-to-top{
 
-    position:fixed;
-
-    bottom:35px;
-
-    left:35px;
-
-    width:55px;
-
-    height:55px;
-
-    border-radius:50%;
-
-    background:var(--primary);
-
-    color:#fff;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    cursor:pointer;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.35s;
-
-    z-index:999;
-
-    box-shadow:0 15px 30px rgba(13,110,253,.3);
-
-}
-
-.back-to-top.active{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-.back-to-top:hover{
-
-    transform:translateY(-5px);
-
-}
 
 /* ==========================================================
    ANIMATION HELPERS
@@ -906,7 +858,7 @@
 
 text-align:center;
 
-padding-top:120px;
+padding-top:100px;
 
 }
 
@@ -950,7 +902,7 @@ font-size:2.2rem;
 
 min-height:auto;
 
-padding:140px 0 80px;
+padding:100px 0 70px;
 
 }
 
@@ -978,17 +930,7 @@ padding:30px 20px;
 
 }
 
-.back-to-top{
 
-left:20px;
-
-bottom:20px;
-
-width:50px;
-
-height:50px;
-
-}
 
 .whatsapp-btn{
 
