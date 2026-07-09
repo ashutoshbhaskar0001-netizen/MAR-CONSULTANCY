@@ -153,7 +153,7 @@
 /* Custom navbar Free Counselling button shape and color to match Image 1 */
 .navbar .btn-warning {
     background: #ffa500 !important;
-    color: #000000 !important;
+    color: #ffffff !important;
     border-radius: 10px !important;
     font-weight: 600 !important;
     padding: 12px 28px !important;
@@ -165,7 +165,7 @@
 
 .navbar .btn-warning:hover {
     background: #e69500 !important;
-    color: #000000 !important;
+    color: #ffffff !important;
     transform: none !important;
 }
 

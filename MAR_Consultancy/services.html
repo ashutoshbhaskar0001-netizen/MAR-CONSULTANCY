@@ -200,43 +200,211 @@ NAVBAR
 PAGE HEADER
 ========================================== -->
 
-    <section class="page-banner">
+    <header class="hero">
 
         <div class="container">
 
-            <h1>
+            <div class="row align-items-center">
 
-                Our Services
+                <div class="col-lg-6 hero-content" data-aos="fade-right">
 
-            </h1>
+                    <h1 class="mt-4" style="color: #ffffff;">
 
-            <nav>
+                        End-to-End Overseas Guidance
 
-                <ol class="breadcrumb">
+                    </h1>
 
-                    <li class="breadcrumb-item">
+                    <p class="mt-4" style="color: #f4f4f4;">
 
-                        <a href="index.html">
+                        We provide expert counselling to shape your career pathway, along with end-to-end 
 
-                            Home
+                        guidance for securing both student visas and work visas. Our dedicated professionals 
+
+                        support you through every stage, ensuring a smooth transition to your destination.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="contact.html#contactForm" class="btn btn-warning">
+
+                            Book Free Consultation
 
                         </a>
 
-                    </li>
+                        <a href="#services-grid" class="btn btn-outline-primary">
 
-                    <li class="breadcrumb-item active">
+                            Explore Services
 
-                        Services
+                        </a>
 
-                    </li>
+                    </div>
 
-                </ol>
+                    <div class="row mt-5" style="margin-bottom: 5px;">
 
-            </nav>
+                        <div class="col-4" style="text-align: center;">
+
+                            <h3 class="counter" data-target="800+"
+
+                                style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+
+                                0
+
+                            </h3>
+
+                            <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0;">
+
+                                Visas Approved
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-4" style="text-align: center;">
+
+                            <h3 class="counter" data-target="99%"
+
+                                style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+
+                                0
+
+                            </h3>
+
+                            <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0; text-transform: uppercase;">
+
+                                VISA SUCCESS RATE
+
+                            </p>
+
+                        </div>
+
+                        <div class="col-4" style="text-align: center;">
+
+                            <h3 class="counter" data-target="2500+"
+
+                                style="color: #ffffff; font-weight: bold; margin-bottom: 2px;">
+
+                                0
+
+                            </h3>
+
+                            <p style="color: #e0e0e0; font-size: 1rem; margin-top: 0;">
+
+                                Careers Counselled
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <script>
+
+                        (function () {
+
+                            const counters = document.querySelectorAll('.hero .counter');
+
+                            counters.forEach(counter => {
+
+                                const targetAttr = counter.getAttribute('data-target');
+
+                                const target = parseInt(targetAttr.replace(/[^0-9]/g, ''), 10);
+
+                                const suffix = targetAttr.replace(/[0-9]/g, '');
+
+                                let current = 0;
+
+                                const duration = 1500;
+
+                                const interval = 16;
+
+                                const steps = duration / interval;
+
+                                const increment = target / steps;
+
+
+
+                                const timer = setInterval(() => {
+
+                                    current += increment;
+
+                                    if (current >= target) {
+
+                                        counter.innerText = target + suffix;
+
+                                        clearInterval(timer);
+
+                                    } else {
+
+                                        counter.innerText = Math.floor(current) + suffix;
+
+                                    }
+
+                                }, interval);
+
+                            });
+
+                        })();
+
+                    </script>
+
+                </div>
+
+                <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-left">
+
+                    <div style="max-width: 280px; 
+
+              animation: float-logo 4s ease-in-out infinite;">
+
+
+
+                        <img src="assets/images/gallery/662741555_18075929009274481_1344322168086941455_n.jpg"
+
+                            class="img-fluid" alt="MAR Consultancy Logo"
+
+                            style="width: 100%; height: auto; display: block; object-fit: contain;">
+
+                    </div>
+
+
+
+                    <style>
+
+                        @keyframes float-logo {
+
+                            0% {
+
+                                transform: translateY(0px);
+
+                            }
+
+
+
+                            50% {
+
+                                transform: translateY(-15px);
+
+                            }
+
+
+
+                            100% {
+
+                                transform: translateY(0px);
+
+                            }
+
+                        }
+
+                    </style>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </section>
+    </header>
 
     <!-- ==========================================
 INTRODUCTION
@@ -330,7 +498,7 @@ INTRODUCTION
 OUR SERVICES GRID
 ========================================== -->
 
-    <section class="bg-section py-5">
+    <section id="services-grid" class="bg-section py-5">
 
         <div class="container">
 

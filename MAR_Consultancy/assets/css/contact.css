@@ -1450,3 +1450,10 @@ textarea.form-control {
     transform: translateY(-10px);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
 }
+
+/* Ensure all buttons on the contact page have white text color */
+.btn,
+.btn:hover,
+.btn:focus {
+    color: #ffffff !important;
+}

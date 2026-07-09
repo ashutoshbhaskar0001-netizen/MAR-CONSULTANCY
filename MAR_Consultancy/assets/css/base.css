@@ -18,11 +18,16 @@
 }
 
 html{
+    width:100vw;
     scroll-behavior:smooth;
     scroll-padding-top:90px;
+    overflow-x:hidden;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
 }
 
 body{
+    width:100vw;
     font-family:var(--font-body);
     font-size:16px;
     line-height:1.7;
@@ -47,20 +52,9 @@ body{
    ========================================================== */
 
 ::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#eef3f8;
-}
-
-::-webkit-scrollbar-thumb{
-    background:var(--primary);
-    border-radius:20px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background:var(--primary-dark);
+    display:none;
+    width:0;
+    height:0;
 }
 
 /* ==========================================================
@@ -168,6 +162,7 @@ p{
 section{
     padding:var(--section-padding) 0;
     position:relative;
+    overflow:hidden;
 }
 
 /* ==========================================================
@@ -204,7 +199,7 @@ section{
 
 .btn-outline-primary{
     border:2px solid var(--primary);
-    color:var(--primary);
+    color:#fff;
     background:transparent;
 }
 
